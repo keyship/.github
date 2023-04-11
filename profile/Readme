@@ -1,3 +1,34 @@
+### Keyship Protocol it is a fully decentralized network, a distributed key encryption protocol.
 
-FULLY DECENTRALIZED NETWORK
-Distributed Key Encryption Protocol
+In a nutshell, Keyship is a protocol that allows you to put encrypted data on any public network, and access it based on the rules you specify. The rules can be based on the payment, NFT ownership, token balance, wallet address, or any other rule you can think of. You can check [cirip.io](https://cirip.io) to have a better idea of how Keyship works.
+
+## Free to use
+Keyship is free to use, you can develop apps for free of charge using Keyship SDK. The creation of secrets/items is free. The paywalls rules are free as well for both creators and users. The only thing the protocol charge is a fee of 2% of the payout to the creator wallet address when a user buy a secret/item/product(selling rule). For the selling rule the payout is instant.
+
+## How it works
+An oversimplified way of explaining how Keyship works:
+
+An user/creator encrypt some data locally using a random generated key. Using a Threshold cryptosystem and Shamir Secret Sharing Scheme the key is encrypted and splited N shares/chunks. Each chunk is send to a different validator, which encrypt the chunk and send it back to the user/creator/client. Now the user can store the encrypted data and the encrypted chunks anywhere. The decryption of the data can be done only by the users who fulfill the rules specified by the creator, validated by the validators.
+
+Using Keyship you can easily put any private(encrypted) data on public networks, blockchains, IPFS, and even cloud or private storage. Once the "creator" publish the private data somewhere, that data can be access only by the user(s) who match or fulfill the rules specified by the creator.
+
+For example, you can upload some content of IPFS, which will be available only for those who pay $1, in this case the rule is to pay $$ to access the encrypted content(the payout to the creator wallet address is instant). In Keyship SDK you can find different rules you can use, like `access by paying`, `access by NFT`(only users who own a specific NFT can access the content), `access by Token`, `access by Wallet Address` and so on(more on Keyship SDK).
+
+Keyship Protocol it is platform agnostic, you can use even on Web2, and we keep adding new 'Rules'. On Web3, Keyship is working by default with any EVM type blockchain. At this moment Keyship support over 20 Blockchains for Rules and 3 Blockchains for paying/payout by default.
+
+<!-- ***Keyship Entities:*** Clients, Validators
+and the Smart contracts. The Clients are implemntations of the
+Keyship SDK, which usualy runs in the user web browser as
+a web application, but could also run server side depending of
+the developer needs. The Validators are represented by the
+devices that form the Keyship network which are actively
+engaged in processing tasks. Specifically, they are responsible
+for encryption and decryption of key shares, validate an sign
+transactions, which Client can send to the Keyship Smart
+Contracts. The Keyship Smart Contracts are represented by
+a set of Solidity Contracts that can exists on any EVM type
+blockchain, but the contracts can be written for any other type
+of blockchain. The role of the Keyship Smart contracts is to
+validate and record the Client transactions.
+
+***Work in progress*** -->
