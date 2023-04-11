@@ -15,20 +15,3 @@ Using Keyship you can easily put any private(encrypted) data on public networks,
 For example, you can upload some content of IPFS, which will be available only for those who pay $1, in this case the rule is to pay $$ to access the encrypted content(the payout to the creator wallet address is instant). In Keyship SDK you can find different rules you can use, like `access by paying`, `access by NFT`(only users who own a specific NFT can access the content), `access by Token`, `access by Wallet Address` and so on(more on Keyship SDK).
 
 Keyship Protocol it is platform agnostic, you can use even on Web2, and we keep adding new 'Rules'. On Web3, Keyship is working by default with any EVM type blockchain. At this moment Keyship support over 20 Blockchains for Rules and 3 Blockchains for paying/payout by default.
-
-<!-- ***Keyship Entities:*** Clients, Validators
-and the Smart contracts. The Clients are implemntations of the
-Keyship SDK, which usualy runs in the user web browser as
-a web application, but could also run server side depending of
-the developer needs. The Validators are represented by the
-devices that form the Keyship network which are actively
-engaged in processing tasks. Specifically, they are responsible
-for encryption and decryption of key shares, validate an sign
-transactions, which Client can send to the Keyship Smart
-Contracts. The Keyship Smart Contracts are represented by
-a set of Solidity Contracts that can exists on any EVM type
-blockchain, but the contracts can be written for any other type
-of blockchain. The role of the Keyship Smart contracts is to
-validate and record the Client transactions.
-
-***Work in progress*** -->
